@@ -1,0 +1,10 @@
+[Unit]
+Description=IR remote control backend for mpv
+
+[Service]
+Restart=on-failure
+RestartSec=5s
+ExecStart=/home/perpus/.local/bin/ir-mpv
+
+[Install]
+WantedBy=default.target
